@@ -11,7 +11,7 @@ require_once 'includes/header.php'; ?>
      -->
 
     <h1 class = "text-center">Registration for IT Conference</h1>
-    <form>
+    <form method="post" action="success.php">
     <div class="form-group">
             <label for="firstname">First Name</label>
             <input required type="text" class="form-control" id="firstname" name="firstname">
@@ -28,9 +28,9 @@ require_once 'includes/header.php'; ?>
         <label for="specialty">Area of Expertise</label>
         <select class="form-select" id="specialty" name="specialty" aria-label="Default select example">
   <option selected>Open this select menu</option>
-  <option value="1">One</option>
-  <option value="2">Two</option>
-  <option value="3">Three</option>
+  <option>front end dev</option>
+  <option>back end dev</option>
+  <option>full stack dev</option>
 </select>
         </div>
         <div class="form-group">
@@ -44,12 +44,7 @@ require_once 'includes/header.php'; ?>
             <small id="phoneHelp" class="form-text text-muted">We'll never share your number with anyone else.</small>
         </div>
         <br/>
-        <div class="custom-file">
-            <input type="file" accept="image/*" class="custom-file-input" id="avatar" name="avatar" >
-            <label class="custom-file-label" for="avatar">Choose File</label>
-            <small id="avatar" class="form-text text-danger">File Upload is Optional</small>
-
-        </div>
+        
         <br>
         <button type="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
     </form>
